@@ -1,0 +1,11 @@
+<html>
+<header>
+<script>
+var parts = this.href.split('/');
+var lastSegment = parts.pop() || parts.pop();  // handle potential trailing slash
+window.location = "https://us-central1-tenacious-veld-207511.cloudfunctions.net/register/" + lastSegment;
+</script>
+</header>
+<body>
+</body>
+</html>
