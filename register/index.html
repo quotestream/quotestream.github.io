@@ -1,9 +1,10 @@
 <html>
 <header>
 <script>
-var parts = this.href.split('/');
-var lastSegment = parts.pop() || parts.pop();  // handle potential trailing slash
-window.location = "https://us-central1-tenacious-veld-207511.cloudfunctions.net/register/" + lastSegment;
+var parts = this.href.split('#');
+if (parts.length === 2) {
+    window.location = "https://us-central1-tenacious-veld-207511.cloudfunctions.net/rgtr/" + parts[1];
+}
 </script>
 </header>
 <body>
