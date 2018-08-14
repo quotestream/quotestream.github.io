@@ -1,18 +1,28 @@
 <html>
   <head>
     <style>
-      #clock{
+      #preview{
        background-image:url('');
        background-size:cover;
        background-position: center;
-       height: 250px; width: 250px;
+       height: 500px; width: 400px;
        border: 1px solid #bbb;
       }
     </style>
+    <title>Submit Theme</title>
   </head>
 <body>
-<input type='file' id='getval' name="background-image" /><br/><br/>
-<div id='clock'></div>
+  
+  <p>This is the super awesome submit theme page..</p>
+  
+Theme Name: <input type="text" placeholder="NAME" required />
+  
+Font: <select>
+  <option>
+</select>
+  
+Background Image: <input type='file' id='getval' name="background-image" required /><br/><br/>
+  <center><div id='preview'></div></center>
   <script>
     document.getElementById('getval').addEventListener('change', readURL, true);
     function readURL(){
