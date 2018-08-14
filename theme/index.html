@@ -1,12 +1,32 @@
 <html>
+  <head>
+    <style>
+      #clock{
+       background-image:url('');
+       background-size:cover;
+       background-position: center;
+       height: 250px; width: 250px;
+       border: 1px solid #bbb;
+      }
+    </style>
+  </head>
 <body>
-
-welcome text
-
-preview
-
-font
-
-background
+<input type='file' id='getval' name="background-image" /><br/><br/>
+<div id='clock'></div>
+  <script>
+    document.getElementById('getval').addEventListener('change', readURL, true);
+    function readURL(){
+      var file = document.getElementById("getval").files[0];
+      var reader = new FileReader();
+      reader.onloadend = function(){
+        document.getElementById('clock').style.backgroundImage = "url(" + reader.result + ")";        
+      }
+      if(file){
+        reader.readAsDataURL(file);
+      }else{
+        throw new Error('no file');
+      }
+  }
+  </script>
 </body>
 </html>
