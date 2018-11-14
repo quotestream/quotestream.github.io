@@ -12,7 +12,7 @@ app:
   ios_id: 1439145370 # REQUIRED - 10 Digit Numeric App ID (lookup in iTunes Connect)
   android_id: app.quotestream # Optional - Enter Android app id like: com.example.app
 
-  icon: # Leave blank to auto-magically populate
+  icon: images/icon.png # Leave blank to auto-magically populate
   # To update use path relative to project root with no leading slash:
   # e.g. images/app-icon-512.png
   # 512px or greater, square
@@ -43,8 +43,7 @@ app:
 # Marketing
 #
 marketing_header: Daily Inspiration # Optional
-marketing_desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
+marketing_desc: Find what inspires you<br>Create quotes and internet memes with thousands of Google Fonts and a growing library of user-contributed themes<br>Connect and share what inspires you with friends
 #
 # Social Links
 #
